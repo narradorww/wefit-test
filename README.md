@@ -8,15 +8,15 @@ Este projeto utiliza a biblioteca React e foi inicializado com [Create React App
 
 ### Scripts Disponíveis
 
-#### `npm json-server --watch server.json`
-No diretório do projeto inicializar primeiramente a API Json-Server para emular o back-end. O acesso as rotas REST API estará em [http://localhost:3000/products](http://localhost:3000/products) para teste
+#### `npm run server`
+No diretório do projeto inicializar primeiramente a API Json-Server para emular o back-end. O acesso as rotas REST API estará em [http://localhost:3001/products](http://localhost:3001/products) para teste
 
 
-#### `npm start` seguido da opção 'Y'  
+#### `npm start` 
 
 
 Abrirá o app em modo de desenvolvimento
-Abra[http://localhost:3001](http://localhost:3001) para visualizar no seu navegador.
+Abra[http://localhost:3000](http://localhost:3000) para visualizar no seu navegador.
 
 A página será recarregada a medida que for editada\
 É possível visualizar os erros de  lint errors no console.

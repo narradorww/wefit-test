@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render a snapshot of the page 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <header
+      class="App-header"
+    >
+      <p>
+        WeMovies
+      </p>
+      <div
+        class="carrinho"
+      >
+        <p>
+          Meu Carrinho
+        </p>
+      </div>
+    </header>
+    <section
+      class="locadora"
+    >
+      <p>
+         Aqui vão os filmes
+      </p>
+    </section>
+  </div>
+</div>
+`;
