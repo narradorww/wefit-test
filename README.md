@@ -4,7 +4,7 @@
 
 Este projeto utiliza a biblioteca React e foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
 
-##Preparação para ambiente de Desenvolvimento e Teste
+## Preparação para ambiente de Desenvolvimento e Teste
 
 ### Scripts Disponíveis
 
