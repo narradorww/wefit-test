@@ -1,18 +1,25 @@
-# Getting Started with Create React App
+# Teste Técnico para a posição de Tech Designer na [WeFit](https://wefit.com.br/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Boilerplate iniciado com Create React App
 
-## Available Scripts
+Este projeto utiliza a biblioteca React e foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
 
-In the project directory, you can run:
+##Preparação para ambiente de Desenvolvimento e Teste
 
-### `npm start`
+### Scripts Disponíveis
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### `npm json-server --watch server.json`
+No diretório do projeto inicializar primeiramente a API Json-Server para emular o back-end. O acesso as rotas REST API estará em [http://localhost:3000/products](http://localhost:3000/products) para teste
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+
+#### `npm start` seguido da opção 'Y'  
+
+
+Abrirá o app em modo de desenvolvimento
+Abra[http://localhost:3001](http://localhost:3001) para visualizar no seu navegador.
+
+A página será recarregada a medida que for editada\
+É possível visualizar os erros de  lint errors no console.
 
 ### `npm test`
 
