@@ -1,0 +1,29 @@
+.principal{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+.loader{
+    width: 62px;
+    height: 62px;
+    background: linear-gradient(to right, #808080 0%, #808080 25%, #F0F0F0 50%, #F8F8F8 75%, #FFFFFF 100%);
+    padding: 4px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+

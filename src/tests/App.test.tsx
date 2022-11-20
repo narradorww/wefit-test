@@ -14,11 +14,6 @@ test('renders Meu Carrinho on page', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-test('renders "Aqui vão os filmes" on page', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Aqui vão os filmes/i);
-  expect(linkElement).toBeInTheDocument();
-});
 
 test('render a snapshot of the page', () => {
   const { container } = render(<App />);
