@@ -1,4 +1,5 @@
 import React from 'react';
+import Container from '../components/Container';
 import Header from '../components/Header';
 
 
@@ -6,12 +7,7 @@ function App() {
   return (
     <div className="App">
      <Header />
-     
-      <section className='locadora'>
-        <p> Aqui vão os filmes</p>
-      </section>
-
-
+     <Container />
     </div>
   );
 }

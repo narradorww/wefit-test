@@ -47,11 +47,14 @@ exports[`render a snapshot of the page 1`] = `
       </div>
     </div>
     <section
-      class="locadora"
+      class="principal"
     >
-      <p>
-         Aqui vão os filmes
-      </p>
+      <img
+        alt="circulo cinza em gradiente indicando carregamento"
+        class="loader"
+        data-testid="loader"
+        src="ovalLoader.png"
+      />
     </section>
   </div>
 </div>
