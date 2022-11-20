@@ -48,13 +48,52 @@ exports[`render a snapshot of the page 1`] = `
     </div>
     <section
       class="principal"
+      data-testid="container"
     >
-      <img
-        alt="circulo cinza em gradiente indicando carregamento"
-        class="loader"
-        data-testid="loader"
-        src="ovalLoader.png"
-      />
+      <div
+        class="card"
+        data-testid="card"
+      >
+        <div
+          class="image"
+          data-testid="image"
+        >
+          <img
+            alt="Capa do filme Viúva Negra"
+            src="https://www.imagemhost.com.br/images/2022/07/10/viuva-negra.png"
+          />
+        </div>
+        <div
+          class="title"
+          data-testid="title"
+        >
+          Viúva Negra
+        </div>
+        <div
+          class="price"
+          data-testid="price"
+        >
+          <p>
+            R$ 
+            9,99
+          </p>
+        </div>
+        <div
+          class="addCart"
+          data-testid="button"
+        >
+          <img
+            alt="Icone de um carrinho de mercado"
+            src="cartplus.svg"
+          />
+          <p>
+            0
+          </p>
+          <p>
+            ADICIONAR AO CARRINHO
+          </p>
+        </div>
+      </div>
     </section>
   </div>
 </div>
