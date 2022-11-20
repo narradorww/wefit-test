@@ -4,9 +4,16 @@ import { render, screen } from '@testing-library/react';
 import Container from '../Container';
 
 
-test('should have a Loader', () => {
-    render(<Container />);
-    const linkElement = screen.getByTestId('loader');
-    expect(linkElement).toBeInTheDocument();
-}
-);
+test('should render a container', () => {
+    render(<Container response={true} />);
+    const container = screen.getByTestId('container');
+    expect(container).toBeInTheDocument();
+})
+
+test('dont should have a Loader if response is true', () => {
+    render(<Container response={true} />);
+    const linkElement = screen.queryByTestId('loader');
+    expect(linkElement).not.toBeInTheDocument();
+});
+
+

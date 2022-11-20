@@ -13,18 +13,18 @@ export interface CardProps {
 
 const Card: React.FC<CardProps> = ({ id, title, price, image, addToCart }) => {
     return (
-        <div className={style.card}>
+        <div data-testid='card' className={style.card}>
             
-            <div className={style.image}>
+            <div data-testid='image' className={style.image}>
                 <img src={image} alt={`Capa do filme ${title}`} />
             </div>
-            <div className={style.title}>
+            <div data-testid='title' className={style.title}>
                 {title}
             </div>
-            <div className={style.price}>
+            <div data-testid='price' className={style.price}>
                 <p>R$ {price.toString().replace('.', ',')}</p>
             </div>
-            <div className={style.addCart}>
+            <div  data-testid='button' className={style.addCart}>
                 <img src={CartPlus} alt="Icone de um carrinho de mercado" />
                 <p>0</p>
                 <p>ADICIONAR AO CARRINHO</p>
