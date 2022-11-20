@@ -1,15 +1,12 @@
 import React from 'react';
+import Header from '../components/Header';
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>WeMovies</p>
-        <div className="carrinho">
-          <p>Meu Carrinho</p>
-        </div>
-      </header>
+     <Header />
+     
       <section className='locadora'>
         <p> Aqui vão os filmes</p>
       </section>

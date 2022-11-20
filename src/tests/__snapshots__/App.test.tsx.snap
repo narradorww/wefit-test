@@ -5,20 +5,47 @@ exports[`render a snapshot of the page 1`] = `
   <div
     class="App"
   >
-    <header
-      class="App-header"
+    <div
+      class="header"
     >
-      <p>
-        WeMovies
-      </p>
       <div
-        class="carrinho"
+        class="logo"
       >
         <p>
-          Meu Carrinho
+          WeMovies
         </p>
       </div>
-    </header>
+      <div
+        class="cart"
+      >
+        <div
+          class="wrapCart"
+        >
+          <div
+            class="myCart"
+          >
+            <p>
+              Meu Carrinho
+            </p>
+          </div>
+          <div
+            class="statusCart"
+          >
+            <p>
+              0 itens
+            </p>
+          </div>
+        </div>
+        <div
+          class="iconBasket"
+        >
+          <img
+            alt="Icone de Cesta para Representar as Compras no Site"
+            src="basket.svg"
+          />
+        </div>
+      </div>
+    </div>
     <section
       class="locadora"
     >
