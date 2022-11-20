@@ -50,7 +50,7 @@ exports[`render a snapshot of the page 1`] = `
       class="principal"
     >
       <img
-        alt="circulo cinza indicando carregamento"
+        alt="circulo cinza em gradiente indicando carregamento"
         class="loader"
         data-testid="loader"
         src="ovalLoader.png"

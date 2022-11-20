@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import App from '../pages/App';
+import App from './App';
 
 test('renders WeMovies on page', () => {
   render(<App />);
@@ -14,8 +14,8 @@ test('renders Meu Carrinho on page', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-
 test('render a snapshot of the page', () => {
   const { container } = render(<App />);
   expect(container).toMatchSnapshot();
 })
+
