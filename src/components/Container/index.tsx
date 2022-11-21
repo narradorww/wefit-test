@@ -24,7 +24,7 @@ const Container = () => {
 
 
     return (
-        <section data-testid='container' className={style.principal}>
+        <section className={style.principal}>
             {products ? products.map((product: IProducts) => {
                 return (
                     
