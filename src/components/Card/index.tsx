@@ -1,15 +1,10 @@
 import * as React from 'react';
 import style from './Card.module.css';
 import CartPlus from '../../assets/images/cartplus.svg';
+import { CardProps } from '../../Interfaces/ICard';
 
 
-export interface CardProps {
-    id: number;
-    title: string;
-    price: number;
-    image: string;
-    addToCart: (id: number) => void;
-}
+
 
 const Card: React.FC<CardProps> = ({ id, title, price, image, addToCart }) => {
     return (
@@ -22,7 +17,7 @@ const Card: React.FC<CardProps> = ({ id, title, price, image, addToCart }) => {
                 {title}
             </div>
             <div data-testid='price' className={style.price}>
-                <p>R$ {price.toString().replace('.', ',')}</p>
+                <p>R$ {price.toFixed(2).toString().replace('.', ',')}</p>
             </div>
             <div  data-testid='button' className={style.addCart}>
                 <img src={CartPlus} alt="Icone de um carrinho de mercado" />

@@ -1,10 +1,23 @@
 .principal{
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 960px;
+    margin: 0 auto; 
+    margin-top: 24px;
+    gap: 16px 16px;
+ 
+}
+
+.loader{
     display: flex;
     justify-content: center;
-    min-height: 100vh;
-    
+    align-items: center;
+    height: 100vh;
 }
+
+
 
 
 
