@@ -1,7 +1,7 @@
 import * as React from 'react';
 import style from './Card.module.css';
 import { CardProps } from '../../Interfaces/ICard';
-import BotaoCarrinho from '../BotaoCarrinho';
+import ButtonCart from '../ButtonCart';
 
 
 
@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({ id, title, price, image, addToCart }) => {
             <div  className={style.price}>
                 <p>R$ {price.toFixed(2).toString().replace('.', ',')}</p>
             </div>
-            <BotaoCarrinho id={id} quantidade={0}  />
+            <ButtonCart id={id} qty={0}  />
 
 
         </div>
