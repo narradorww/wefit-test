@@ -29,7 +29,6 @@ const Container = () => {
                 return (
                     
                      <Card
-                     data-testid='card'
                      key={product.id}
                      id={product?.id}
                      title={product?.title} 
@@ -39,7 +38,7 @@ const Container = () => {
                     
                 )
                 
-            }) : <div className={style.loader}><Loader  data-testid="loader"/>
+            }) : <div className={style.loader}><Loader/>
             </div>
                 
             }

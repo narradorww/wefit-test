@@ -1,8 +1,9 @@
-import React from "react";
+import React, {FC} from "react";
 import Basket from "../../assets/images/basket.svg";
 import style from "./Header.module.css";
+import { IHeader } from "../../Interfaces/IHeader";
 
-const Header = () => {
+const Header : FC<IHeader>  = () => {
   return (
     <div className={style.header}>
       <div className={style.logo}>
