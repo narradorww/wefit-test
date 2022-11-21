@@ -1,5 +1,6 @@
 import React from 'react'
 import Ok from '../../assets/images/sucess.svg'
+import Button from '../Button'
 import style from './Sucess.module.css'
 
 
@@ -10,7 +11,7 @@ const Sucess = () => {
         <div className={style.sucesso}>
         <p>{"Compra realizada com sucesso!"}</p>
         <img src={Ok} alt="Ilustração de um jovem fazendo sinal de positivo"/>
-        <button>Voltar</button>
+        <Button className={style.button}>Voltar</Button>
         </div>
         </section>
     )
