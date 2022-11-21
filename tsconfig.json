@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
+    "types": ["node", "jest"],
     "lib": [
       "dom",
       "dom.iterable",
@@ -18,7 +19,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "outDir": "./dist"
   },
   "include": ["src",
   "src/**/*.ts",
