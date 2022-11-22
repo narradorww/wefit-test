@@ -6,6 +6,7 @@ export interface CardProps {
     title: string;
     price: number;
     image: string;
+    qtty: number;
     product: IProduct;
     onClick?: Function;
 }

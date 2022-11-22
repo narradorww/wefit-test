@@ -94,6 +94,7 @@ export const CartProvider = ({ children }: propTypes) => {
     setState({ ...state, cart: { items } });
   };
 
+
   return (
     <CartContext.Provider
       value={{
