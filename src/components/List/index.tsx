@@ -12,6 +12,12 @@ const List = () => {
     <section className={style.principal}>
       {context.state.products.length !== 0 ? (
         context.state.products.map((product: IProduct) => {
+          let qtty = 0;
+          const defQtty = context.state.cart.items.find(
+            (item) => item.product.id === product.id
+          )?.count;
+          qtty = defQtty ? defQtty : 0;
+        
           return (
             <Card
               key={product.id}
@@ -20,6 +26,7 @@ const List = () => {
               title={product?.title}
               price={product?.price}
               image={product?.image}
+              qtty={qtty}
             />
           );
         })

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useContext, useEffect } from "react";
 import style from "./Card.module.css";
 import { CardProps } from "../../Interfaces/ICard";
 import { CartContext } from "../../context/CartContext";
@@ -6,12 +6,29 @@ import CartPlus from "../../assets/images/cartplus.svg";
 import Button from "../Button";
 
 const Card: React.FC<CardProps> = ({ id, title, price, image, product }) => {
-  const context = React.useContext(CartContext);
+  const context = useContext(CartContext);
+  const [color, setColor] = React.useState("blue");
+
+  let qtty = 0;
+  const defQtty = context.state.cart.items.find(
+    (item) => item.product.id === product.id
+  )?.count;
+  qtty = defQtty ? defQtty : 0;
+
+  useEffect(() => {
+    if (qtty > 0) {
+      setColor("green");
+    } else {
+      setColor("blue");
+    }
+  }, [qtty]);
+
+  console.log("qtty +color ", `${qtty} + ${color}`);
+
+ 
   const handleClick = () => {
     context.addToCart(product);
-    console.log(`Clicou`);
-    console.log(context.state.cart);
-  };
+        };
 
   return (
     <div className={style.card}>
@@ -22,11 +39,17 @@ const Card: React.FC<CardProps> = ({ id, title, price, image, product }) => {
       <div className={style.price}>
         <p>R$ {price.toFixed(2).toString().replace(".", ",")}</p>
       </div>
-      <Button onClick={handleClick} className={style.addCart}>
+      { color === "blue" ?<Button onClick={handleClick} className={style.addCartBlue} >
         <img src={CartPlus} alt="Icone de um carrinho de mercado" />
-        <p>0</p>
+        <p>{qtty}</p>
         <p>ADICIONAR AO CARRINHO</p>
       </Button>
+      :
+      <Button onClick={handleClick} className={style.addCartGreen} >
+        <img src={CartPlus} alt="Icone de um carrinho de mercado" />
+        <p>{qtty}</p>
+        <p>ADICIONAR AO CARRINHO</p>
+      </Button>}
     </div>
   );
 };

@@ -9,9 +9,10 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-
     position: relative;
     color: #333333;
+    margin: 0 auto;
+    margin-bottom: 24px;
    
 }
 
@@ -42,7 +43,7 @@
     color: #2F2E41;
 }
 
-.addCart{
+.addCartBlue{
     width: 288px;
     height: 40px;
     display: flex;
@@ -51,6 +52,24 @@
     align-items: center;
     background-color:#009EDD;
     border: solid #337FED 1px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: none;
+   }
+
+   .addCartGreen{
+    width: 288px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#039B00;
+    border: solid #039B19 1px;
     border-radius: 4px;
     font-size: 12px;
     color: #FFFFFF;
