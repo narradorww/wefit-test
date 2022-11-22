@@ -8,13 +8,13 @@ import style from './ButtonCart.module.css';
 
 
 
-const ButtonCart: FC<IButtonCart> = ({id, qty, color }) => {
+const ButtonCart: FC<IButtonCart> = ({qty, onClick, product }) => {
     return (
         <Button  className={style.addCart}>
-        <img src={CartPlus} alt="Icone de um carrinho de mercado" />
-        <p>0</p>
-        <p>ADICIONAR AO CARRINHO</p>
-    </Button>
+            <img src={CartPlus} alt="Icone de um carrinho de mercado" />
+            <p>{qty}</p>
+            <p>ADICIONAR AO CARRINHO</p>
+        </Button>
     )
 }
 

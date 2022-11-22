@@ -1,5 +1,8 @@
+import { IProduct } from "./IProduct";
+
 export interface IButtonCart {
-    id: number;
-    qty?: number;
-    color?: string;
+    qty: number;
+    product?: IProduct;
+    onClick: Function
+
 }
