@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({ id, title, price, image, product }) => {
     }
   }, [qtty]);
 
-  console.log("qtty +color ", `${qtty} + ${color}`);
+
 
  
   const handleClick = () => {
