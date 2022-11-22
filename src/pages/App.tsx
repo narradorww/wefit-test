@@ -1,18 +1,14 @@
-import React from 'react'
-import Container from '../components/Container';
-import Header from '../components/Header';
-import EmptyCart from '../components/EmptyCart/index';
-import Sucess from '../components/Sucess/index';
-
+import React from "react";
+import List from "../components/List";
+import Header from "../components/Header";
+import EmptyCart from "../components/EmptyCart/index";
+import Sucess from "../components/Sucess/index";
 
 function App() {
   return (
     <div className="App">
-     <Header />
-     <Container />
-     <EmptyCart/>
-     <Sucess />
-
+      <Header />
+      <List />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export interface IProducts {
+export interface IProduct {
     id: number;
     title: string;
     price: number;

@@ -1,7 +1,11 @@
+import { IProduct } from './IProduct';
+
 export interface CardProps {
+
     id: number;
     title: string;
     price: number;
     image: string;
-    addToCart?: (id: number) => void;
+    product: IProduct;
+    onClick?: Function;
 }
