@@ -3,6 +3,7 @@ import Basket from "../../assets/images/basket.svg";
 import style from "./Header.module.css";
 import { IHeader } from "../../Interfaces/IHeader";
 import { CartContext } from "../../context/CartContext";
+import { Link } from "react-router-dom";
 
 const Header : FC<IHeader>  = () => {
   const context = useContext(CartContext);
@@ -12,7 +13,9 @@ const Header : FC<IHeader>  = () => {
   return (
     <div className={style.header}>
       <div className={style.logo}>
+        <Link to="/" style={{textDecoration : 'none', color: 'white'}}>
         <p>WeMovies</p>
+        </Link>
       </div>
       <div className={style.cart}>
         <div className={style.wrapCart}>
@@ -24,10 +27,12 @@ const Header : FC<IHeader>  = () => {
           </div>
         </div>
         <div className={style.iconBasket}>
+          <Link to="/cart">
           <img
             src={Basket}
             alt="Icone de Cesta para Representar as Compras no Site"
-          />
+            />
+          </Link>
         </div>
       </div>
     </div>
