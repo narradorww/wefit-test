@@ -91,3 +91,103 @@
     background-color: #999999;
     margin: 0 24px 0 24px;
 }
+
+@media only screen and (max-device-width: 375px){
+    .cart{
+        width: 343px;
+        height: 100%;
+        margin: 0 auto;
+        margin-top: 24px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFFFFF;
+        padding-left: 5px;
+        padding-right: 5px;
+     
+    
+    }
+
+    .items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 52px;
+    }
+
+    .cart p{
+        color: #999;
+        font-size: 14px;
+        font-weight: 700;
+        
+    }
+    
+
+    .checkout{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 24px;
+        height: 120px;
+    
+       
+    }
+    
+    .buttonCheckout{
+        width: 236px;
+        height: 40px;
+        background-color: #009EDD;
+        border-radius: 4px;
+        border: none;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+       
+        ;
+       
+    }
+    
+    .total{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        
+        
+    }
+    
+    .totalTag{
+        color: #999;
+        width: 62px;
+        height: 12px;
+        font-size: 14px;
+        font-weight: 700;
+        margin-right: 8px;
+        align-items: center;
+    }
+    
+    .totalPrice{
+        font: 'Open Sans', sans-serif;
+        color: #2F2E41;
+        width: 130px;
+        height: 21px;
+        font-size: 24px;
+        font-weight: 700;
+        margin-right: 8px;
+        align-items: center;
+    }
+    
+    .line{
+        width: 80%;
+        height: 1px;
+        background-color: #999999;
+        margin: 64px 24px 0 24px;
+    }
+}
