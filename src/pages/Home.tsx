@@ -3,7 +3,7 @@ import List from "../components/List";
 
 function Home() {
     return (
-    <div className="App">
+    <div>
         <Header />
         <List />
     </div>
