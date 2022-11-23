@@ -1,16 +1,25 @@
 import React from "react";
-import List from "../components/List";
-import Header from "../components/Header";
-import EmptyCart from "../components/EmptyCart/index";
-import Sucess from "../components/Sucess/index";
-import Cart from '../components/Cart/index';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CartPage from "./CartPage";
+import Home from "./Home";
+import EmptyPage from './EmptyCardPage';
+import SucessPage from "./SucessPage";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <List />
-      <Cart />
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<CartPage/>}/>
+        <Route path="/empty" element={<EmptyPage />}/>
+        <Route path="/sucess" element={<SucessPage/>}/>
+        <Route path="*" element={<EmptyPage />} />
+      </Routes>
+      </BrowserRouter>
+
+
+      
     </div>
   );
 }
